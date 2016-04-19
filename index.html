@@ -4,48 +4,115 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portfolio</title>
+        <title>Utopia</title>
 
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <div class = "container">
             <div class = "title row">
-                <div class = "col-md-6 col-sm-4 col-xs-4"><img class = "img-responsive title-pic" src="images/luffy.jpg"></div>
+                <div class = "col-md-6 col-sm-4 col-xs-4">
+                    <img class = "img-responsive title-pic" src="images/luffy.jpg">
+                </div>
                 <div class = "col-md-6 col-sm-8 col-xs-8 text-right text-uppercase">
                     <h1 class = "text-thin title-name">Chicheng Zhou</h1>
-                    <h4 class = "title-description">Web & Front-end Ninja</h3>
+                    <h4 class = "title-description">Web & Front-end Ninja</h4>
+                    <div class = "title-social">
+                        <a class = "link-github" href="https://github.com/billzhou0223" target = "_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                        <a class = "link-linkedin" href="https://www.linkedin.com/in/chichengzhou" target = "_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </div>
             <div class = "row">
                 <div class = "col-md-12">
-                    <hr>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                        <li role="presentation"><a href="#about-me" aria-controls="about-me" role="tab" data-toggle="tab">About Me</a></li>
+                        <li role="presentation"><a href="#featured-work" aria-controls="featured-work" role="tab" data-toggle="tab">Featured Work</a></li>
+                        <li role="presentation"><a href="#resume" aria-controls="resume" role="tab" data-toggle="tab">Resume</a></li>
+                    </ul>
                 </div>
-            </div>  
+            </div>
+
+            <!-- Tab panes -->
             <div class = "row">
                 <div class = "col-md-12">
-                    <img class = "img-responsive" src="images/sf.jpg">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <div class = "row">
+                                <div class = "col-md-12">
+                                    <img class = "img-responsive" src="images/sf.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="about-me">
+                            <div class = "row">
+                                <div class = "col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                                    <article>
+                                        <h3>
+                                            Summary
+                                        </h3>   
+                                        <p>
+                                            I just graduated from Santa Clara University with a master degree in computer science and engineering. I feel lucky that I found my interest in web technology and building web applications when I was studying in my web development course. Since then, I decided to start my career as a web/front-end developer.
+                                        </p>
+                                        <h3>
+                                            Skills
+                                        </h3>   
+                                        <p>
+                                            I am familiar with web development technologies including Javascipt, HTML/CSS(SASS), JQuery, BootStrap, etc. I also have experience in using MVC framework(Ember.js), Oracle/Mongo database and developing Restful API. In addition, I have a good understanding of Java and fundamental CS knowledge as well.
+                                        </p>
+                                        <h3>
+                                            What I am looking for
+                                        </h3>   
+                                        <p>
+                                            I love programming and I am very passionate in learning new skills and use them into my work. I am a quick learner so if a new technique needs to be used in project, I am able to pick it up quickly. I like playing basketball in my spare time so I know how important team spirit is. I would love to work for a company which has a great culture, strongly believe in its product and service and really cares about the quality of its product.
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="featured-work">
+                            <div class = "row text-center text-uppercase">
+                                <div class = "col-md-6 col-sm-6">
+                                    <img class = "img-responsive proj-img" src="images/booklist.png" data-toggle="modal" data-target="#myModal1">
+                                    <h3>Booklist App</h3>
+                                </div>
+                                <div class = "col-md-6 col-sm-6">
+                                    <img class = "img-responsive proj-img" src="images/weather.jpg" data-toggle="modal" data-target="#myModal2">
+                                    <h3>Weather Forecast App</h3>
+                                </div>
+                                <div class = "col-md-6 col-sm-6">
+                                    <img class = "img-responsive proj-img" src="images/hanhaiinvestment.jpg" data-toggle="modal" data-target="#myModal3">
+                                    <h3>Hanhai Investment</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="resume">
+                            <div class = "row">
+                                <div class = "col-md-12 text-right h4">
+                                    <a href="images/resume_ChichengZhou_frontend.pdf" download>Download PDF</a>
+                                </div>
+                            </div>
+                            <div>
+                                <!-- <embed class="embed-responsive-item" src="images/resume_ChichengZhou_frontend.pdf"> -->
+                                <img class = "img-responsive" src="images/resume_ChichengZhou_frontend.jpg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class = "row">
-                <h2 class = "col-md-12 text-muted">Featured Work</h2>
-            </div>
-            <div class = "row text-center text-uppercase">
-                <div class = "col-md-6">
-                    <img class = "img-responsive proj-img" src="images/booklist.png" data-toggle="modal" data-target="#myModal1">
-                    <h3>Booklist App</h3>
-                </div>
-                <div class = "col-md-6">
-                    <img class = "img-responsive proj-img" src="images/weather.jpg" data-toggle="modal" data-target="#myModal2">
-                    <h3>Weather Forecast App</h3>
-                </div>
-                <div class = "col-md-6">
-                    <img class = "img-responsive proj-img" src="images/hanhaiinvestment.jpg" data-toggle="modal" data-target="#myModal3">
-                    <h3>Hanhai Investment</h3>
-                </div>
-            </div>
+            <footer class = "row">
+                <div class = "col-md-12">
+                    <p class = "footer-contact">
+                        <span>Cell: (408)823-3732</span>
+                        <span>Email: &nbsp;<a href="mailto:billzhou0223@gmail.com">billzhou0223@gmail.com</a></article></span>
+                    </p>
+                </div>  
+            </footer>
         </div>
 
         <!-- Modal -->
@@ -58,8 +125,8 @@
                     </div>
                     <div class="modal-body">
                         <div class = "row">
-                            <div class = "col-md-12">
-                                <iframe id = "video1" width="100%" height="315" src="https://www.youtube.com/embed/gsAp72-Wet0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                            <div class = "col-md-12 embed-responsive embed-responsive-16by9">
+                                <iframe id = "video1" class = "embed-responsive-item" src="https://www.youtube.com/embed/gsAp72-Wet0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class = "row">
@@ -105,8 +172,8 @@
                     </div>
                     <div class="modal-body">
                         <div class = "row">
-                            <div class = "col-md-12">
-                                <iframe id = "video1" width="100%" height="315" src="https://www.youtube.com/embed/buZJ-e1v3gA?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                            <div class = "col-md-12 embed-responsive embed-responsive-16by9">
+                                <iframe id = "video1" class = "embed-responsive-item" width="100%" height="315" src="https://www.youtube.com/embed/buZJ-e1v3gA?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class = "row">

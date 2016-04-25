@@ -15,4 +15,15 @@ $(document).ready(function() {
 			}
 		});
 	});
+
+	/*
+	load map when opening resume tab the first time
+	*/
+	var ulTab = $('ul[role = "tablist"]')[0];
+	$(ulTab).on('click', 'a', function(event) {
+		debugger;
+		if(event.target.innerHTML === 'Resume' && !map) {
+			setTimeout('initializeMap()', 0);
+		}
+	});
 });

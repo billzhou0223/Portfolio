@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href="css/resume.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class = "container">
@@ -103,10 +104,39 @@
                             <div class = "row">
                                 <!-- <embed class="embed-responsive-item" src="images/resume_ChichengZhou_frontend.pdf"> -->
                                 <div class = "col-xs-12">
-                                    <picture>
+                                    <!-- <picture>
                                         <source srcset = "images/resume_ChichengZhou_frontend_small_2x.jpg 2x, images/resume_ChichengZhou_frontend_small_1x.jpg 1x" media = "(max-width: 400px)">
                                         <img class = "resume-img img-responsive" src="images/resume_ChichengZhou_frontend.jpg">
-                                    </picture>
+                                    </picture> -->
+                                    <div id="resume-div">
+                                        <!--
+                                        Everything from here to the <script> tag below is the skeleton of your
+                                        website. Your code will add information to each of the sections of the
+                                        resume below. You can pretty easily figure out what each section will
+                                        display by looking at the id or at what's written between the <h2> tags.
+                                        -->
+                                        <div id="header" class="center-content clearfix">
+                                          <ul id="topContacts" class='clearfix'></ul>
+                                        </div>
+                                        <!-- <div style='clear: both;'></div> -->
+                                        <div id="workExperience" class='gray'>
+                                          <h2>Work Experience</h2>
+                                        </div>
+                                        <div id="projects">
+                                          <h2>Projects</h2>
+                                        </div>
+                                        <div id="education" class='gray'>
+                                          <h2>Education</h2>
+                                        </div>
+                                        <div id="mapDiv">
+                                          <h2>Where I've Lived and Worked</h2>
+                                        </div>
+                                        <!-- <div id="letsConnect" class='dark-gray'>
+                                          <h2 class='orange center-text'>Let's Connect</h2>
+                                            <ul id="footerContacts" class="flex-box">
+                                          </ul>
+                                        </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -261,6 +291,9 @@
         
         <script type="text/javascript" src = "js/jquery-1.12.3.min.js"></script>
         <script type="text/javascript" src = "js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+        <script type="text/javascript" src="js/helper.js"></script>
+        <script type="text/javascript" src="js/resumeBuilder.js"></script>
         <script type="text/javascript" src = "js/main.js"></script>
     </body>
 </html>
